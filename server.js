@@ -8,7 +8,7 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use("/", router);
+app.use("https://portfolioedn.herokuapp.com/", router);
 app.listen(process.env.PORT || 5000, () => console.log("Server Running"));
 // console.log(process.env.EMAIL);
 // console.log(process.env.PASS);
@@ -29,7 +29,7 @@ contactEmail.verify((error) => {
   }
 });
 
-router.post("https://portfolioedn.herokuapp.com/contact", (req, res) => {
+router.post("/contact", (req, res) => {
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;
