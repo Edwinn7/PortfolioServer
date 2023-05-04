@@ -1,2 +1,5 @@
 /node_modules
+/functions
+.Procfile
+index.html
 .env

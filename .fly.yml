@@ -1,0 +1,6 @@
+name: nombre_de_la_aplicacion
+cmd: node index.js
+env:
+  NODE_ENV: production
+  EMAIL: batallasroyale@gmail.com
+  PASS: yjamannvnaoazvrq
